@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "SimpleSignalRApp", "SimpleSignalRApp\SimpleSignalRApp.sfproj", "{12FD8E20-DA33-46D0-B5F3-E5F4BED4EBA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWeb", "SimpleWeb\SimpleWeb.csproj", "{8D98DBA7-9B3D-42D6-A015-18E818525942}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleWeb", "SimpleWeb\SimpleWeb.csproj", "{8D98DBA7-9B3D-42D6-A015-18E818525942}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,6 +16,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{12FD8E20-DA33-46D0-B5F3-E5F4BED4EBA1}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{12FD8E20-DA33-46D0-B5F3-E5F4BED4EBA1}.Debug|Any CPU.Build.0 = Debug|x64
+		{12FD8E20-DA33-46D0-B5F3-E5F4BED4EBA1}.Debug|Any CPU.Deploy.0 = Debug|x64
 		{12FD8E20-DA33-46D0-B5F3-E5F4BED4EBA1}.Debug|x64.ActiveCfg = Debug|x64
 		{12FD8E20-DA33-46D0-B5F3-E5F4BED4EBA1}.Debug|x64.Build.0 = Debug|x64
 		{12FD8E20-DA33-46D0-B5F3-E5F4BED4EBA1}.Debug|x64.Deploy.0 = Debug|x64

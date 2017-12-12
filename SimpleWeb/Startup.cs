@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNet.SignalR;
 
 namespace SimpleWeb
 {
@@ -37,6 +38,10 @@ namespace SimpleWeb
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            // Configure Backplane
+            string connectionString = "Endpoint=sb://signalrbob.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=+Kj3GPf+1ZGLfRoqOizRP0UXahxgqPIUSiOPao9im4Q=";
+            GlobalHost.DependencyResolver.UseServiceBus(connectionString, "signalrbob1");
 
             app.UseStaticFiles();
 
