@@ -20,7 +20,7 @@
                                     AzureActiveDirectory="true"
                                     ServerCertThumbprint="0123456789012345678901234567890123456789" />
   -->
-  <ClusterConnectionParameters ConnectionEndpoint="" />
+  <ClusterConnectionParameters ConnectionEndpoint="signalrbob1.westus2.cloudapp.azure.com:19000" X509Credential="true" ServerCertThumbprint="7F2E84D065A447144EE83E44D48154831C5E7DAE" FindType="FindByThumbprint" FindValue="7F2E84D065A447144EE83E44D48154831C5E7DAE" StoreLocation="CurrentUser" StoreName="My" />
   <ApplicationParameterFile Path="..\ApplicationParameters\Cloud.xml" />
   <CopyPackageParameters CompressPackage="true" />
 </PublishProfile>

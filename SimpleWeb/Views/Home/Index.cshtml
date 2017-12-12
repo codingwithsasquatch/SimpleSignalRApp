@@ -9,8 +9,8 @@
 
 <script type="text/javascript">
 
-    console.log("test");
-    alert("test");
+    //console.log("test");
+    //alert("test");
 
 </script>
 
@@ -19,8 +19,8 @@
     var transport = signalR.TransportType.WebSockets;
     var connection = new signalR.HubConnection(`http://${document.location.host}/notifications`, { transport: transport });
 
-    console.log(connection);
-    alert(connection);
+    //console.log(connection);
+    //alert(connection);
 
     var button = document.getElementById("getValues");
 
@@ -31,13 +31,24 @@
     });
 
     button.addEventListener("click", event => {
-        fetch("http://localhost:9002/api/simple")
+
+        var url = 'http://' + document.location.host + "/api/simple";
+
+        fetch(url)
             .then(function (data) {
                 console.log(data);
             })
             .catch(function (error) {
-                console.log(err);
+                console.log(error);
             });
+
+        //fetch("http://localhost:9002/api/simple")
+        //    .then(function (data) {
+        //        console.log(data);
+        //    })
+        //    .catch(function (error) {
+        //        console.log(err);
+        //    });
 
     });
 
