@@ -1,5 +1,4 @@
 #Service Fabric with SignalR
-Our Sample
 
 ##Sample
 The sample code creates a simple MVC application that has a button to send a message to the other SignalR clients.  
@@ -7,6 +6,7 @@ The sample code creates a simple MVC application that has a button to send a mes
 We created out Service Fabric cluster using the new PS command [New-AzureRmServiceCluster](https://docs.microsoft.com/en-us/azure/service-fabric/scripts/service-fabric-powershell-create-secure-cluster-cert).  This command creates a Secure Service Fabric Cluster with the number of nodes specified on the *clustersize* parameter. 
 
 ###Tips for Cluster Creation
+
 1. You MUST create the certfolder on your machine ahead of time.  
 2. Your #clustername should be all *lowercase*!
 3. No need to create the Resource Group, Key Vault, or any other Azure resources as the script **WILL DO THIS FOR YOU!**
@@ -21,6 +21,7 @@ SignalR can create the backplane for you on Service Bus,SQL Backplane or Redis b
 The recomendation however is to just write (publish) your messages straight to the Service Bus and then have your clients subscribe to the bus to recieve new messages.  Until SignalR makes scaling easier.  
 
 ###References
-[Scaling out with SignalR] (https://docs.microsoft.com/en-us/aspnet/signalr/overview/performance/scaleout-in-signalr)
-[Scaling with Azure Service Bus](https://docs.microsoft.com/en-us/aspnet/signalr/overview/performance/scaleout-with-windows-azure-service-bus)
-[Scaling with Redis](https://docs.microsoft.com/en-us/aspnet/signalr/overview/performance/scaleout-with-redis)
+
+-[Scaling out with SignalR] (https://docs.microsoft.com/en-us/aspnet/signalr/overview/performance/scaleout-in-signalr)
+-[Scaling with Azure Service Bus](https://docs.microsoft.com/en-us/aspnet/signalr/overview/performance/scaleout-with-windows-azure-service-bus)
+-[Scaling with Redis](https://docs.microsoft.com/en-us/aspnet/signalr/overview/performance/scaleout-with-redis)
